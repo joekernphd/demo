@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class TestActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -25,6 +26,7 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
                 TextView display = findViewById(R.id.userDisplay);
                 EditText input = findViewById(R.id.userInput);
                 display.setText(input.getText().toString());
+                Toast.makeText(this, "Action button pressed.",Toast.LENGTH_LONG).show();
         }
     }
 }
