@@ -33,7 +33,9 @@ public class TestFragment extends Fragment implements View.OnClickListener{
                 TextView display = myView.findViewById(R.id.userDisplay);
                 EditText input = myView.findViewById(R.id.userInput);
                 display.setText(input.getText().toString());
-                Toast.makeText(getActivity(), "Action button pressed.", Toast.LENGTH_LONG).show();
+                MainActivity mainActivity = (MainActivity) getActivity();
+                //Toast.makeText(getActivity(), mainActivity.username, Toast.LENGTH_LONG).show();
+                mainActivity.cryptodaddies();
         }
     }
 }
